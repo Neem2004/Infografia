@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header>Excepciones</header>
+    <div class="parent">
+        <div class="div1">
+            <h1 style="color:rgb(2, 2, 2);">Clasificación de Excepciones</h1>
+            <pre style="font-size: 18px;">
+Object
+ └── Throwable
+     └── Exception ⚠️
+         ├── ClassNotFoundException ⚠️
+         ├── CloneNotSupportedException
+         ├── IllegalAccessException
+         ├── InstantiationException
+         ├── InterruptedException
+         ├── NoSuchMethodException
+         └── RuntimeException ⚡
+             ├── ArithmeticException ➗
+             ├── ArrayStoreException 📦
+             ├── ClassCastException 🎭
+             ├── IllegalMonitorStateException 🚦
+             ├── NegativeArraySizeException ➖
+             ├── NullPointerException 🚫
+             ├── SecurityException 🔒
+             ├── IndexOutOfBoundsException 🔢
+             │   ├── StringIndexOutOfBoundsException ✍️
+             │   └── ArrayIndexOutOfBoundsException 📊
+             └── IllegalArgumentException ⚠️
+                 ├── NumberFormatException 🔢➡️🔤
+                 └── IllegalThreadStateException 🧵
+</pre>
+<p style="color: black;" class=".quote">
+    “When used to best advantage, exceptions can improve a program’s readability, reliability, and maintainability. When used improperly, they can have the opposite effect.”
+— Joshua Bloch, en Effective Java ➔
+<a href="https://www.goodreads.com/work/quotes/101316-effective-java-programming-language-guide?utm_source=chatgpt.com"><img src="./img/file-lines-solid-full.svg" class="img4"></a>
+</p>
+        </div>
+        <div class="div2">
+            <h1>
+                Qué es una excepción?
+            </h1>
+            <p>
+                Una excepción es un error que ocurre durante la ejecución de un programa. Si no se maneja, el programa se detiene.
+            </p>
+        </div>
+        <div class="div3">
+             <h1>
+                Estructura
+            </h1>
+            <div class="Est">
+                <ul>
+                    <p>try { // código que puede fallar } 
+                        <ul>
+                            <p>catch (Exception e) { // qué hacer si ocurre }
+                                <ul>
+                                     <p>finally { // siempre se ejecuta }</p>
+                                </ul>
+                            </p>
+                        </ul>
+                    </p>
+                </ul>
+            </div>
+            <img src="./img/laptop-code-solid-full.svg" alt="code" class="img2">
+        </div>
+        <div class="div4">
+            <h1>
+                Ejemplo
+            </h1>
+            <div class="Est">
+                <ul>
+                    <p>try { int resultado = 10 / 0; } 
+                        <ul>
+                            <p>catch (ArithmeticException e) <br/> { System.out.println("No se puede dividir entre cero."); } 
+                            </p>
+                        </ul>
+                    </p>
+                </ul>
+            </div>
+           <img src="./img/try-catch-r.png" alt="code" class="img3">
+        </div>
+        <div class="div5">
+            <h1 style="color: black;">
+                Ventajas
+            </h1>
+            <ul>
+                <li>
+                    ⚡ Evitan que el programa se detenga
+                </li>
+                <li>
+                    🛠️ Facilitan la depuración
+                </li>
+                <li>
+                    🔒 Hacen el software más seguro
+                </li>
+            </ul>
+                
+        </div>
+         
+    </div>
+
+</body>
+
+</html>
